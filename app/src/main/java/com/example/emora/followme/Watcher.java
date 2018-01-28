@@ -9,14 +9,14 @@ public class Watcher {
     String number;
     boolean restrictView;
     boolean isActive;
-    User stroller;
+    //User stroller;
 
-    public Watcher(String name, String number, boolean restrictView, boolean isActive, User stroller) {
+    public Watcher(String name, String number, boolean restrictView, boolean isActive) {
         this.name = name;
         this.number = number;
         this.restrictView = restrictView;
         this.isActive = isActive;
-        this.stroller = stroller;
+        //this.stroller = stroller;
     }
 
     public String getName() {

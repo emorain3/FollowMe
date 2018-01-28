@@ -20,12 +20,13 @@
 
     <EditText
         android:id="@+id/userName"
-        android:layout_width="228dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:fontFamily="@font/comfortaa"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:text="Enter Your Name" />
+
 
     <EditText
         android:id="@+id/userNumber"
@@ -34,7 +35,7 @@
         android:ems="10"
         android:fontFamily="@font/comfortaa"
         android:inputType="textPersonName"
-        android:text="Phone Number" />
+        android:text="000-000-0000" />
 
     <EditText
         android:id="@+id/userRace"
@@ -90,14 +91,7 @@
         android:inputType="textPersonName"
         android:text="Weight" />
 
-    <EditText
-        android:id="@+id/userInfo"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="@font/comfortaa"
-        android:inputType="textMultiLine"
-        android:text="Additional Identifiable Info" />
+
 
     <Button
         android:id="@+id/updateProfile"

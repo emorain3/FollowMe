@@ -22,14 +22,16 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/purple"
             app:popupTheme="@style/AppTheme.PopupOverlay">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:layout_marginTop="0dp"
-            android:text="Follow Me"
-            android:textColor="@color/white"
-            android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/comfortaa"
+                android:text="Follow Me"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
     </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
@@ -61,20 +63,23 @@
                     android:src="@drawable/day_person"
                     android:padding="10dp"
                     />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    android:text="Profile"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Profile"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
                     android:gravity="center"
-                    android:text="View and Edit Your Profile"
                     android:padding="5dp"
-                    android:textColor="@color/lightGrey"/>
+                    android:text="View and Edit Your Profile"
+                    android:textColor="@color/lightGrey" />
 
 
             </LinearLayout>
@@ -100,19 +105,23 @@
                     android:src="@drawable/day_drop_pin"
                     android:padding="10dp"
                     />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Start Route"/>
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Start Route"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
                     android:gravity="center"
-                    android:text="Set The Route That You Will Take"
                     android:padding="5dp"
-                    android:textColor="@color/lightGrey"/>
+                    android:text="Set The Route That You Will Take"
+                    android:textColor="@color/lightGrey" />
 
 
             </LinearLayout>
@@ -148,20 +157,23 @@
                     android:src="@drawable/person_icon"
                     android:padding="10dp"
                     />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    android:text="Watchlist"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Watchlist"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
                     android:gravity="center"
-                    android:text="View Watcher Options"
                     android:padding="5dp"
-                    android:textColor="@color/lightGrey"/>
+                    android:text="View Watcher Options"
+                    android:textColor="@color/lightGrey" />
 
 
             </LinearLayout>
@@ -187,20 +199,23 @@
                     android:src="@drawable/person_icon"
                     android:padding="10dp"
                     />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"
-                    android:text="Active Watcher"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/comfortaa"
+                    android:text="Active Watcher"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
                     android:gravity="center"
-                    android:text="... Ummm, what does this do?"
                     android:padding="5dp"
-                    android:textColor="@color/lightGrey"/>
+                    android:text="... Ummm, what does this do?"
+                    android:textColor="@color/lightGrey" />
 
 
             </LinearLayout>

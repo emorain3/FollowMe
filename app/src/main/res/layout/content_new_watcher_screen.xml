@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="@font/comfortaa"
             android:inputType="textPersonName"
             android:text="Watcher's Name" />
 
@@ -28,6 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:fontFamily="@font/comfortaa"
             android:inputType="textPersonName"
             android:text="Watcher's Phone Number" />
 
@@ -35,24 +37,28 @@
             android:id="@+id/restrictNewWatcher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
             android:text="Restrict Watcher's View?" />
 
         <CheckBox
             android:id="@+id/sendNewWatcherRequest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
             android:text="Send Watcher Request?" />
 
         <Button
             android:id="@+id/confirmNewWatcher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
             android:text="Confirm New Watcher" />
 
         <Button
             android:id="@+id/newWatcherToWatchList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
             android:text="Return to Watchlist" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -7,14 +7,15 @@ package com.example.emora.followme;
 public class Watcher {
     String name;
     String number;
-    boolean restrictView = false;
-    boolean active = false;
+    boolean restrictView;
+    boolean isActive;
     User stroller;
 
-    public Watcher(String name, String number, boolean restrictView, User stroller) {
+    public Watcher(String name, String number, boolean restrictView, boolean isActive, User stroller) {
         this.name = name;
         this.number = number;
         this.restrictView = restrictView;
+        this.isActive = isActive;
         this.stroller = stroller;
     }
 
@@ -27,7 +28,7 @@ public class Watcher {
     }
 
     public boolean isActive() {
-        return active;
+        return isActive;
     }
 
     public void setName(String name) {
@@ -38,7 +39,7 @@ public class Watcher {
     }
 
     public void setActiveStatus(boolean status) {
-        this.active = active;
+        this.isActive = isActive;
     }
     public void setWatcherView(boolean restrictView) {
         this.restrictView = restrictView;

@@ -8,17 +8,19 @@ import java.util.List;
  */
 
 public class User {
-    String name;
-    String number;
+    private String name;
+    private String number;
     //String address;
-    String height;
-    String weight;
-    String eyeColor;
-    String hairColor;
-    String race;
-    String addtnInfo;
-    boolean isWatcher = false;
-    List<Watcher> watchlist = new ArrayList<>();
+    private String height;
+    private String weight;
+    private String eyeColor;
+    private String hairColor;
+    private String race;
+    private String addtnInfo;
+    private boolean isWatcher = false;
+    private List<Watcher> watchlist = new ArrayList<>();
+    private User currentUser;
+
 
     public User(String name, String number, String height, String weight,
                 String eyeColor, String hairColor, String race, String addtnInfo) {

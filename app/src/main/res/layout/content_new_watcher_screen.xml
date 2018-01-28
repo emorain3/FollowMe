@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.emora.followme.NewWatcherScreen"
+    tools:showIn="@layout/activity_new_watcher_screen">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="511dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp">
+
+        <EditText
+            android:id="@+id/watcherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Watcher's Name" />
+
+        <EditText
+            android:id="@+id/watcherNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Watcher's Phone Number" />
+
+        <CheckBox
+            android:id="@+id/restrictNewWatcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restrict Watcher's View?" />
+
+        <CheckBox
+            android:id="@+id/sendNewWatcherRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Watcher Request?" />
+
+        <Button
+            android:id="@+id/confirmNewWatcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm New Watcher" />
+
+        <Button
+            android:id="@+id/newWatcherToWatchList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return to Watchlist" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

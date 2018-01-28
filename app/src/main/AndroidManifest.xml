@@ -23,6 +23,18 @@
             android:name=".ProfileScreen"
             android:label="@string/title_activity_profile_screen"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WatchlistScreen"
+            android:label="@string/title_activity_watchlist_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewWatcherScreen"
+            android:label="@string/title_activity_new_watcher_screen"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
+    <uses-permission android:name="android.permission.SEND_SMS">
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS">
+    </uses-permission>
 
 </manifest>

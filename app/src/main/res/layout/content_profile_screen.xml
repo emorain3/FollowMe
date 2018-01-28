@@ -5,14 +5,101 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorAccent"
+ 
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.emora.followme.ProfileScreen"
     tools:showIn="@layout/activity_profile_screen">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
 
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/userNumber"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Phone Number" />
+
+    <EditText
+        android:id="@+id/userRace"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text= "Race"/>
+
+    <EditText
+        android:id="@+id/userEyeColor"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Eye Color" />
+
+    <EditText
+        android:id="@+id/userHairColor"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Hair Color" />
+
+    <EditText
+        android:id="@+id/userAge"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Age" />
+
+    <EditText
+        android:id="@+id/userHeight"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Height" />
+
+    <EditText
+        android:id="@+id/userWeight"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Weight" />
+
+    <EditText
+        android:id="@+id/userInfo"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text= "Additional Identifiable Info"/>
+
+    <Button
+        android:id="@+id/updateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Profile" />
+
+    <Button
+        android:id="@+id/mainPageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Page" />
+
+
 </LinearLayout>

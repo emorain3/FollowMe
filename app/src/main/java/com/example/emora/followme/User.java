@@ -10,7 +10,7 @@ import java.util.List;
 public class User {
     String name;
     String number;
-    String address;
+    //String address;
     String height;
     String weight;
     String eyeColor;
@@ -20,12 +20,12 @@ public class User {
     boolean isWatcher = false;
     List<Watcher> watchlist = new ArrayList<>();
 
-    public User(String name, String number, String address, String height, String weight,
-                String eyeColor, String hairColor, String race, String addtnInfo, String status) {
+    public User(String name, String number, String height, String weight,
+                String eyeColor, String hairColor, String race, String addtnInfo) {
 
         this.name = name;
         this.number = number;
-        this.address = address;
+        //this.address = address;
         this.height = height;
         this.weight = weight;
         this.hairColor = hairColor;
@@ -43,9 +43,9 @@ public class User {
         return number;
     }
 
-    public String getAddress() {
+    /*public String getAddress() {
         return address;
-    }
+    }*/
 
     public String getHeight() {
         return height;
@@ -79,10 +79,10 @@ public class User {
         this.number = number;
 
     }
-
+    /*
     public void setAddress(String address) {
         this.address = address;
-    }
+    }*/
 
     public void setHeight(String height) {
         this.height = height;

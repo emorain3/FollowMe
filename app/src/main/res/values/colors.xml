@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#B6A2BB</color>
-    <color name="colorPrimaryDark">#410275</color>
-    <color name="colorAccent">#75707B</color>
-    <color name="colorBackground">#0A0027</color>
-    <color name="colorText">#FFFFFF</color>
+    <color name="nightColorPrimary">#B6A2BB</color>
+    <color name="nightColorPrimaryDark">#410275</color>
+    <color name="nightColorAccent">#75707B</color>
+    <color name="nightColorBackground">#0A0027</color>
+    <color name="nightColorText">#FFFFFF</color>
+
+
+    <color name="colorPrimary">#A762FF</color>
+    <color name="purple">#A762FF</color>
+    <color name="colorPrimaryDark">#913AFF</color>
+    <color name="colorAccent">#C1B8C5</color>
+    <color name="lightGrey">#C1B8C5</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorText">#575758</color>
+    <color name="darkGray">#575758</color>
 </resources>

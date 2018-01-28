@@ -2,6 +2,7 @@ package com.example.emora.followme;
 
 import android.Manifest;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -48,19 +49,42 @@ public class NewWatcherScreen extends AppCompatActivity {
         chSendNewWatcherRequest = (CheckBox) findViewById(R.id.sendNewWatcherRequest);
         btnConfirmNewWatcher = (Button) findViewById(R.id.confirmNewWatcher);
 
+
+        if(ContextCompat.checkSelfPermission(NewWatcherScreen.this,
+                Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
+            if(ActivityCompat.shouldShowRequestPermissionRationale(NewWatcherScreen.this,
+                    Manifest.permission.SEND_SMS)) {
+                ActivityCompat.requestPermissions(NewWatcherScreen.this,
+                        new String[] {Manifest.permission.SEND_SMS}, 1);
+            }else {
+                ActivityCompat.requestPermissions(NewWatcherScreen.this,
+                        new String[]{Manifest.permission.SEND_SMS}, 1);
+            }
+        } else {
+        }
+
         btnConfirmNewWatcher.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (confirmationAttempt()) {
-
-                    Watcher watcher = new Watcher(etWatcherName.getText().toString(),
-                            etWatcherNumber.getText().toString(), chRestrictNewWatcher.isChecked(),
-                            chSendNewWatcherRequest.isChecked());
-                    sendText("+919124329083", "testing roger wilson");
-
-                } else {
+                try {
+                    SmsManager smsManager = SmsManager.getDefault();
+                    smsManager.sendTextMessage("+19124329083", null, "Code is XXYX", null, null);
+                    Toast.makeText(NewWatcherScreen.this, "Ayyyye!", Toast.LENGTH_SHORT).show();
+                }catch (Exception e) {
                     Toast.makeText(NewWatcherScreen.this, "You fucked up!", Toast.LENGTH_LONG).show();
                 }
+//                if (confirmationAttempt()) {
+
+//                    Watcher watcher = new Watcher(etWatcherName.getText().toString(),
+//                            etWatcherNumber.getText().toString(), chRestrictNewWatcher.isChecked(),
+//                            chSendNewWatcherRequest.isChecked());
+
+
+//                    sendSMSMessage("+14706293412", "testing roger wilson");
+//
+////                } else {
+//                    Toast.makeText(NewWatcherScreen.this, "You fucked up!", Toast.LENGTH_LONG).show();
+////                }
             }
         });
 
@@ -79,22 +103,39 @@ public class NewWatcherScreen extends AppCompatActivity {
                 etWatcherNumber.getText().toString() != null;
 
     }
-    public void sendText(String watcherNum, String watcherCode) {
-        ActivityCompat.requestPermissions(this,
-                new String[]{Manifest.permission.SEND_SMS},1);
-        ArrayList<String> messages = new ArrayList<>();
-        messages.add(watcherCode);
-        int permissionCheck = ContextCompat.checkSelfPermission(this,
-                Manifest.permission.SEND_SMS);
 
-        if(permissionCheck == PackageManager.PERMISSION_GRANTED) {
-        SmsManager smsManager = SmsManager.getDefault();
-        if (watcherNum != null) {
-            smsManager.sendMultipartTextMessage(watcherNum,
-                    null, messages, null, null);
+
+    public void sendSMSMessage(String watcherNum, String watcherCode) {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) !=
+                PackageManager.PERMISSION_GRANTED) {
+            if(ActivityCompat.shouldShowRequestPermissionRationale(this,
+                    Manifest.permission.SEND_SMS)) {
+            }else {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.SEND_SMS},
+                        0);
+            }
         }
+
     }
+    @Override
+    public void onRequestPermissionsResult(int requestCode,String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case 1: {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                    if (ContextCompat.checkSelfPermission(NewWatcherScreen.this, Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED ){
+                        Toast.makeText(this, "Code XXXX delivered", Toast.LENGTH_SHORT).show();
+                    }
+
+                }else {
+                    Toast.makeText(getApplicationContext(),
+                            "SMS failed, please try again.", Toast.LENGTH_SHORT).show();{
+                    }
+                    return;
+                }
+            }
+        }
+
+    }
+
 }
-
-
-    }

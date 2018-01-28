@@ -6,12 +6,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.emora.followme.MainActivity"
-    android:padding="10dp"
+    android:padding="0dp"
     android:background="@color/white"
-    android:gravity="center"
+    android:gravity="top"
     android:id="@+id/mainlayout">
 
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="0dp"
+            android:text="Follow Me"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
 
     <LinearLayout
         android:clipToPadding="false"

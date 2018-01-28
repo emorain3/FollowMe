@@ -58,7 +58,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackground"
-                    android:src="@drawable/person_icon"
+                    android:src="@drawable/day_person"
                     android:padding="10dp"
                     />
                 <TextView
@@ -97,7 +97,7 @@
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circlebackground"
-                    android:src="@drawable/map_pin_icon_purple"
+                    android:src="@drawable/day_drop_pin"
                     android:padding="10dp"
                     />
                 <TextView
@@ -139,7 +139,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp">
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"

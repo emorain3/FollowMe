@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     private CardView profileButton;
     private CardView routeButton;
+    private CardView watchListButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +36,20 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        routeButton = (CardView) findViewById(R.id.RouteButton);
-        routeButton.setOnClickListener(new View.OnClickListener() {
+//        routeButton = (CardView) findViewById(R.id.RouteButton);
+//        routeButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, .class);
+//                startActivity(intent);
+//            }
+//        });
+
+        watchListButton = (CardView) findViewById(R.id.WatchListButton);
+        watchListButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ProfileScreen.class);
+                Intent intent = new Intent(MainActivity.this, WatchlistScreen.class);
                 startActivity(intent);
             }
         });
